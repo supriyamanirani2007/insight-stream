@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <title>All-in-one Editor in Your Phone</title>
+    <meta property="og:title" content="All-in-one Editor in Your Phone"/>
+    <meta name="twitter:title" content="All-in-one Editor in Your Phone"/>
+    <meta name="description"
+          content="With InShot, You can create amazing works even as a newbie, make attractive videos and get more likes."/>
+    <meta property="og:description"
+          content="With InShot, You can create amazing works even as a newbie, make attractive videos and get more likes."/>
+    <meta name="twitter:description"
+          content="With InShot, You can create amazing works even as a newbie, make attractive videos and get more likes."/>
+    <meta property="og:image" content="https://inshotshare.app/English.jpg"/>
+    <meta name="twitter:image" content="https://inshotshare.app/English.jpg"/>
+    <meta name="keywords" content="inshot"/>
+    <link rel="icon" type="image/x-icon" href="https://inshotshare.app/dynamiclink.ico">
+</head>
+<body>
+<script>
+    var link = 'https://v.inshot.com/invite';
+    if (link.indexOf('?') === -1) {
+        link = link + '?'
+    }
+    link = link + '&_imcp=1';
+    var newLink = document.createElement('a');
+    newLink.href = link;
+    document.body.appendChild(newLink);
+
+    function handleClick() {
+        document.body.removeChild(newLink);
+    }
+
+    newLink.addEventListener('click', handleClick);
+    window.setTimeout(function () {
+        newLink.click();
+    }, 500)
+
+</script>
+</body>
+</html>
